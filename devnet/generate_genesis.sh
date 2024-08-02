@@ -11,9 +11,9 @@ FAUCET_WALLET_NAME="faucet"
 FAUCET_WALLET_TOKENS=$(echo '10^18' | bc) # 1 allo
 # These numbers should match the Token distribution schedule described in the whitepaper
 FOUNDATION_WALLET_NAME="foundation"
-FOUNDATION_WALLET_TOKENS=$(echo '10^26' | bc) # 10% of total token supply of 1e27 (1 Billion Allo)
+FOUNDATION_WALLET_TOKENS=$(echo '10^26' | bc) # 10% of total token supply of 1e27 (1 Billion Allo) = 100M allo
 INVESTORS_WALLET_NAME="investors"
-INVESTORS_WALLET_TOKENS=$(echo '3.105*10^26' | bc | cut -f 1 -d '.') # 31.05% of total token supply of 1e27
+INVESTORS_WALLET_TOKENS=$(echo '3.105*10^26' | bc | cut -f 1 -d '.') # 31.05% of total token supply of 1e27 = 310.5M allo
 TEAM_WALLET_NAME="team"
 TEAM_WALLET_TOKENS=$(echo '1.75*10^26' | bc | cut -f 1 -d '.') # 17.5% of total token supply of 1e27
 
@@ -23,7 +23,7 @@ COMMON_HOME_DIR="${COMMON_HOME_DIR:-$(pwd)}"
 allorad=$(which allorad)
 keyringBackend=test
 
-valPreffix="validator"                      #! Used in save_keys_awssecretsmanager.sh
+valPreffix="validator"
 genesisHome="$COMMON_HOME_DIR/genesis"
 gentxDir=${genesisHome}/gentxs
 mkdir -p $gentxDir
@@ -99,10 +99,10 @@ for ((i=0; i<$VALIDATOR_NUMBER; i++)); do
     $allorad --home=$valHome init $valName --chain-id $CHAIN_ID --default-denom ${DENOM}
 
     # Symlink genesis to have the accounts
-    ln -sfr $genesisHome/config/genesis.json $valHome/config/genesis.json
+    gln -sfr $genesisHome/config/genesis.json $valHome/config/genesis.json
 
     # Symlink keyring-test to have keys
-    ln -sfr $genesisHome/keyring-test $valHome/keyring-test
+    gln -sfr $genesisHome/keyring-test $valHome/keyring-test
 
     $allorad --home=$valHome genesis gentx $valName ${VALIDATOR_TOKENS}${DENOM} \
         --chain-id $CHAIN_ID --keyring-backend $keyringBackend \
