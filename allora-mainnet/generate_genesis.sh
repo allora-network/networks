@@ -17,7 +17,7 @@ INVESTORS_WALLET_TOKENS=$(echo '3.105*10^26' | bc | cut -f 1 -d '.') # 31.05% of
 TEAM_WALLET_NAME="team"
 TEAM_WALLET_TOKENS=$(echo '1.75*10^26' | bc | cut -f 1 -d '.') # 17.5% of total token supply of 1e27
 
-VALIDATOR_TOKENS=$(echo '(10^24 - 100*10^18)/3' | bc) # 100M allo - 100 allo
+VALIDATOR_TOKENS=333333000000000000000000
 COMMON_HOME_DIR="${COMMON_HOME_DIR:-$(pwd)}"
 
 allorad=$(which allorad)
@@ -126,7 +126,7 @@ dasel put 'app_state.slashing.params.slash_fraction_double_sign' -t string -v "0
 dasel put 'app_state.slashing.params.slash_fraction_downtime' -t string -v "0.00010000000000000" -f $genesisHome/config/genesis.json
 dasel put 'app_state.staking.params.unbonding_time' -t string -v "1814400s" -f $genesisHome/config/genesis.json
 dasel put 'app_state.staking.params.min_commission_rate' -t string -v "0.050000000000000000" -f $genesisHome/config/genesis.json
-dasel put 'app_state.staking.params.max_validators' -t string -v "100" -f $genesisHome/config/genesis.json
+dasel put 'app_state.staking.params.max_validators' -t string -v "75" -f $genesisHome/config/genesis.json
 
 
 cp -f $genesisHome/config/genesis.json $COMMON_HOME_DIR
