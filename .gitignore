@@ -19,3 +19,4 @@ seed*
 generate_sentry_seed.sh
 restore
 !seeds.txt
+*.old
