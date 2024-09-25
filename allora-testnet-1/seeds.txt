@@ -1,0 +1,1 @@
+2eb9f5f80d721be2d37ab72c10a7be6aaf7897a4@seed-1.testnet.allora.network:26656,18fbf5f16f73e216f93304d94e8b79bf5acd7578@seed-2.testnet.allora.network:26656
