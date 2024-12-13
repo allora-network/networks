@@ -558,7 +558,8 @@
         "participants_percent_of_total_supply": "0.055000000000000000",
         "investors_percent_of_total_supply": "0.310500000000000000",
         "team_percent_of_total_supply": "0.175000000000000000",
-        "maximum_monthly_percentage_yield": "0.009500000000000000"
+        "maximum_monthly_percentage_yield": "0.009500000000000000",
+        "months_unlocked": "0"
       },
       "previous_reward_emission_per_unit_staked_token": "0.000000000000000000",
       "previous_block_emission": "0",
