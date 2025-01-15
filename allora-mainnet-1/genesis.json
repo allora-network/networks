@@ -1,0 +1,713 @@
+{
+  "app_name": "allorad",
+  "app_version": "0.8.0",
+  "genesis_time": "2024-12-23T14:08:14.267395511Z",
+  "chain_id": "allora-mainnet-1",
+  "initial_height": 1,
+  "app_hash": null,
+  "app_state": {
+    "07-tendermint": null,
+    "auth": {
+      "params": {
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      },
+      "accounts": [
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "allo1av8zu7ss8lajw9v0lrs75jn679tvrty2qavsfk",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "allo1as2566nccr5fuedqhyue3wz07j6a0ppfhd4y3p",
+          "pub_key": null,
+          "account_number": "1",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "allo1f66sc9adfdwuzp3cnxrg00p3q46d33v2jhqm3n",
+          "pub_key": null,
+          "account_number": "2",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "allo1vmv489rj5lz27gl647v85a86lxg9evxvdgdwru",
+          "pub_key": null,
+          "account_number": "3",
+          "sequence": "0"
+        }
+      ]
+    },
+    "authz": {
+      "authorization": []
+    },
+    "bank": {
+      "params": {
+        "send_enabled": [],
+        "default_send_enabled": true
+      },
+      "balances": [
+        {
+          "address": "allo1f66sc9adfdwuzp3cnxrg00p3q46d33v2jhqm3n",
+          "coins": [
+            {
+              "denom": "uallo",
+              "amount": "26000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "allo1vmv489rj5lz27gl647v85a86lxg9evxvdgdwru",
+          "coins": [
+            {
+              "denom": "uallo",
+              "amount": "26000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "allo1av8zu7ss8lajw9v0lrs75jn679tvrty2qavsfk",
+          "coins": [
+            {
+              "denom": "uallo",
+              "amount": "640499922000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "allo1as2566nccr5fuedqhyue3wz07j6a0ppfhd4y3p",
+          "coins": [
+            {
+              "denom": "uallo",
+              "amount": "26000000000000000000"
+            }
+          ]
+        }
+      ],
+      "supply": [
+        {
+          "denom": "uallo",
+          "amount": "640500000000000000000000000"
+        }
+      ],
+      "denom_metadata": [],
+      "send_enabled": []
+    },
+    "capability": {
+      "index": "1",
+      "owners": []
+    },
+    "circuit": {
+      "account_permissions": [],
+      "disabled_type_urls": []
+    },
+    "consensus": {
+      "params": {
+        "block": {
+          "max_bytes": "4194304",
+          "max_gas": "50000000"
+        },
+        "evidence": {
+          "max_age_num_blocks": "100000",
+          "max_age_duration": "172800000000000",
+          "max_bytes": "1048576"
+        },
+        "validator": {
+          "pub_key_types": [
+            "ed25519"
+          ]
+        },
+        "version": {
+          "app": "0"
+        },
+        "abci": {
+          "vote_extensions_enable_height": "0"
+        }
+      }
+    },
+    "distribution": {
+      "params": {
+        "community_tax": "0.020000000000000000",
+        "base_proposer_reward": "0.000000000000000000",
+        "bonus_proposer_reward": "0.000000000000000000",
+        "withdraw_addr_enabled": true
+      },
+      "fee_pool": {
+        "community_pool": []
+      },
+      "delegator_withdraw_infos": [],
+      "previous_proposer": "",
+      "outstanding_rewards": [],
+      "validator_accumulated_commissions": [],
+      "validator_historical_rewards": [],
+      "validator_current_rewards": [],
+      "delegator_starting_infos": [],
+      "validator_slash_events": []
+    },
+    "emissions": {
+      "params": {
+        "version": "v7",
+        "max_serialized_msg_length": "1000000",
+        "min_topic_weight": "100",
+        "required_minimum_stake": "100000",
+        "remove_stake_delay_window": "604800",
+        "min_epoch_length": "12",
+        "beta_entropy": "0.25",
+        "learning_rate": "0.05",
+        "max_gradient_threshold": "0.001",
+        "min_stake_fraction": "0.5",
+        "max_unfulfilled_worker_requests": "100",
+        "max_unfulfilled_reputer_requests": "100",
+        "topic_reward_stake_importance": "0.5",
+        "topic_reward_fee_revenue_importance": "0.5",
+        "topic_reward_alpha": "0.5",
+        "task_reward_alpha": "0.1",
+        "validators_vs_allora_percent_reward": "0.25",
+        "max_samples_to_scale_scores": "10",
+        "max_top_inferers_to_reward": "32",
+        "max_top_forecasters_to_reward": "6",
+        "max_top_reputers_to_reward": "6",
+        "create_topic_fee": "75",
+        "gradient_descent_max_iters": "10",
+        "registration_fee": "50000000",
+        "default_page_limit": "100",
+        "max_page_limit": "1000",
+        "min_epoch_length_record_limit": "3",
+        "blocks_per_month": "864000",
+        "p_reward_inference": "3",
+        "p_reward_forecast": "3",
+        "p_reward_reputer": "1",
+        "c_reward_inference": "0.75",
+        "c_reward_forecast": "0.75",
+        "c_norm": "0.75",
+        "epsilon_reputer": "0.01",
+        "half_max_process_stake_removals_end_block": "40",
+        "epsilon_safe_div": "0.0000001",
+        "data_sending_fee": "10",
+        "max_elements_per_forecast": "12",
+        "max_active_topics_per_block": "1",
+        "max_string_length": "255",
+        "initial_regret_quantile": "0.25",
+        "p_norm_safe_div": "8.25",
+        "global_whitelist_enabled": true,
+        "topic_creator_whitelist_enabled": true,
+        "min_experienced_worker_regrets": "10",
+        "inference_outlier_detection_threshold": "11",
+        "inference_outlier_detection_alpha": "0.2",
+        "lambda_initial_score": "2",
+        "global_worker_whitelist_enabled": true,
+        "global_reputer_whitelist_enabled": true,
+        "global_admin_whitelist_appended": true,
+        "max_whitelist_input_array_length": "2000"
+      },
+      "core_team_addresses": [
+        "allo1as2566nccr5fuedqhyue3wz07j6a0ppfhd4y3p"
+      ],
+      "next_topic_id": "0",
+      "topics": [],
+      "active_topics": [],
+      "rewardable_topics": [],
+      "topic_workers": [],
+      "topic_reputers": [],
+      "topic_reward_nonce": [],
+      "inferer_scores_by_block": [],
+      "forecaster_scores_by_block": [],
+      "reputer_scores_by_block": [],
+      "reputer_listening_coefficient": [],
+      "previous_reputer_reward_fraction": [],
+      "previous_inference_reward_fraction": [],
+      "previous_forecast_reward_fraction": [],
+      "previous_forecaster_score_ratio": [],
+      "total_stake": "0",
+      "topic_stake": [],
+      "stake_reputer_authority": [],
+      "stake_sum_from_delegator": [],
+      "delegated_stakes": [],
+      "stake_from_delegators_upon_reputer": [],
+      "delegate_reward_per_share": [],
+      "stake_removals_by_block": [],
+      "stake_removals_by_actor": [],
+      "delegate_stake_removals_by_block": [],
+      "delegate_stake_removals_by_actor": [],
+      "inferences": [],
+      "forecasts": [],
+      "workers": [],
+      "reputers": [],
+      "topic_fee_revenue": [],
+      "previous_topic_weight": [],
+      "all_inferences": [],
+      "all_forecasts": [],
+      "all_loss_bundles": [],
+      "network_loss_bundles": [],
+      "previous_percentage_reward_to_staked_reputers": "0",
+      "unfulfilled_worker_nonces": [],
+      "unfulfilled_reputer_nonces": [],
+      "latest_inferer_network_regrets": [],
+      "latest_forecaster_network_regrets": [],
+      "latest_one_in_forecaster_network_regrets": [],
+      "latest_naive_inferer_network_regrets": [],
+      "latest_one_out_inferer_inferer_network_regrets": [],
+      "latest_one_out_inferer_forecaster_network_regrets": [],
+      "latest_one_out_forecaster_inferer_network_regrets": [],
+      "latest_one_out_forecaster_forecaster_network_regrets": [],
+      "topic_last_worker_commit": [],
+      "topic_last_reputer_commit": [],
+      "open_worker_windows": [],
+      "last_drip_block": [],
+      "topic_to_next_possible_churning_block": [],
+      "block_to_active_topics": [],
+      "block_to_lowest_active_topic_weight": [],
+      "inferer_score_emas": [],
+      "forecaster_score_emas": [],
+      "reputer_score_emas": [],
+      "previous_topic_quantile_inferer_score_ema": [],
+      "previous_topic_quantile_forecaster_score_ema": [],
+      "previous_topic_quantile_reputer_score_ema": [],
+      "count_inferer_inclusions_in_topic_active_set": [],
+      "count_forecaster_inclusions_in_topic_active_set": [],
+      "active_inferers": [],
+      "active_forecasters": [],
+      "lowest_inferer_score_ema": [],
+      "lowest_forecaster_score_ema": [],
+      "active_reputers": [],
+      "lowest_reputer_score_ema": [],
+      "loss_bundles": [],
+      "total_sum_previous_topic_weights": "0",
+      "reward_current_block_emission": "0",
+      "whitelist_admins": [],
+      "global_whitelist": [],
+      "topic_creator_whitelist": [],
+      "topic_worker_whitelist": [],
+      "topic_reputer_whitelist": [],
+      "topic_worker_whitelist_enabled": [],
+      "topic_reputer_whitelist_enabled": [],
+      "last_median_inferences": [],
+      "mad_inferences": [],
+      "initial_inferer_ema_score": [],
+      "initial_forecaster_ema_score": [],
+      "initial_reputer_ema_score": [],
+      "global_worker_whitelist": [],
+      "global_reputer_whitelist": [],
+      "global_admin_whitelist": []
+    },
+    "evidence": {
+      "evidence": []
+    },
+    "feegrant": {
+      "allowances": []
+    },
+    "feeibc": {
+      "identified_fees": [],
+      "fee_enabled_channels": [],
+      "registered_payees": [],
+      "registered_counterparty_payees": [],
+      "forward_relayers": []
+    },
+    "feemarket": {
+      "params": {
+        "alpha": "0.000000000000000000",
+        "beta": "1.000000000000000000",
+        "gamma": "0.000000000000000000",
+        "delta": "0.000000000000000000",
+        "min_base_gas_price": "10.00000000000000000",
+        "min_learning_rate": "0.125000000000000000",
+        "max_learning_rate": "0.125000000000000000",
+        "max_block_utilization": "30000000",
+        "window": "1",
+        "fee_denom": "uallo",
+        "enabled": true,
+        "distribute_fees": true
+      },
+      "state": {
+        "base_gas_price": "1.000000000000000000",
+        "learning_rate": "0.125000000000000000",
+        "window": [
+          "0"
+        ],
+        "index": "0"
+      }
+    },
+    "genutil": {
+      "gen_txs": [
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "Allora Foundation ovh--ca-east--mainnet--validator-3 ✳️",
+                  "identity": "EF1899EECA32F6F3",
+                  "website": "https://allora.network",
+                  "security_contact": "validator@alloralabs.xyz",
+                  "details": "A self-improving decentralized A.I. network"
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "",
+                "validator_address": "allovaloper1vmv489rj5lz27gl647v85a86lxg9evxv6vtdls",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "A4zJuM4HtVAnSdO0SkvsyUamv4B0aGEA+y8ITtxAh1Q="
+                },
+                "value": {
+                  "denom": "uallo",
+                  "amount": "5000000000000000000"
+                }
+              }
+            ],
+            "memo": "1c769620e30906a5f31e5955d96437759de47973@15.204.101.178:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "A22Al4+QI4n+GVzDbMDDgOeAj94TMQbc/kqS9oSQcnuA"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "+hAy3WWnCVN4AI9r3yLw8Pc0o8XrfEeW0bn+grKl+Nltolz/eGF18KGZAtPHB6YZE9/NPuM0ufbAdnVIrFUlOw=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "Allora Foundation ovh--us-west--mainnet--validator-1 ✳️",
+                  "identity": "EF1899EECA32F6F3",
+                  "website": "https://allora.network",
+                  "security_contact": "validator@alloralabs.xyz",
+                  "details": "A self-improving decentralized A.I. network"
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "",
+                "validator_address": "allovaloper1as2566nccr5fuedqhyue3wz07j6a0ppfqfn8dd",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "6JgGPYpWiMY9+9lZM+GjNttbNR4SWagJ4CugpNp4qwA="
+                },
+                "value": {
+                  "denom": "uallo",
+                  "amount": "5000000000000000000"
+                }
+              }
+            ],
+            "memo": "704fb86c462a3832f690c12387e85e1f88347224@15.204.101.178:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AqUrc3/c3cRfFHI2B0SUJnf4KvYQqkG8/fGC3PRuif1d"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "p2oIl3Z5pUdz2Sue4ulUWFmzgMpUkSPGKUwNrHX4UthIBI0JTKkG/XVjw0hLkHxyUMVeFVOngUaPFB3HtYFGyA=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "Allora Foundation ovh--us-west--mainnet--validator-2 ✳️",
+                  "identity": "EF1899EECA32F6F3",
+                  "website": "https://allora.network",
+                  "security_contact": "validator@alloralabs.xyz",
+                  "details": "A self-improving decentralized A.I. network"
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "",
+                "validator_address": "allovaloper1f66sc9adfdwuzp3cnxrg00p3q46d33v29nxcdl",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "7XTjJLRGYsAlYBxwyo8YZB30knAN6NjeEVNtiynihJA="
+                },
+                "value": {
+                  "denom": "uallo",
+                  "amount": "5000000000000000000"
+                }
+              }
+            ],
+            "memo": "40c04d7b9a6420878d87330b62a68d972fb608a0@15.204.101.178:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "Awnj+1IFGkEXX0r5nIW4XzInyalxoCVAxlU0nGJvwgT0"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "yR3VTZAJ9XWa1PwlviS4TQoRid/fgHXrYeuZwQXN4CcYYyBfLJERRNiIakW4ISuRlr0uBAr0deCQC7AhkmQ4Pw=="
+          ]
+        }
+      ]
+    },
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposits": [],
+      "votes": [],
+      "proposals": [],
+      "deposit_params": null,
+      "voting_params": null,
+      "tally_params": null,
+      "params": {
+        "min_deposit": [
+          {
+            "denom": "uallo",
+            "amount": "10000000"
+          }
+        ],
+        "max_deposit_period": "48h0m0s",
+        "voting_period": "48h0m0s",
+        "quorum": "0.334000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto_threshold": "0.334000000000000000",
+        "min_initial_deposit_ratio": "0.000000000000000000",
+        "proposal_cancel_ratio": "0.500000000000000000",
+        "proposal_cancel_dest": "",
+        "expedited_voting_period": "12h0m0s",
+        "expedited_threshold": "0.667000000000000000",
+        "expedited_min_deposit": [
+          {
+            "denom": "uallo",
+            "amount": "50000000"
+          }
+        ],
+        "burn_vote_quorum": false,
+        "burn_proposal_deposit_prevote": false,
+        "burn_vote_veto": true,
+        "min_deposit_ratio": "0.010000000000000000"
+      },
+      "constitution": ""
+    },
+    "ibc": {
+      "client_genesis": {
+        "clients": [],
+        "clients_consensus": [],
+        "clients_metadata": [],
+        "params": {
+          "allowed_clients": [
+            "07-tendermint"
+          ]
+        },
+        "create_localhost": false,
+        "next_client_sequence": "0"
+      },
+      "connection_genesis": {
+        "connections": [],
+        "client_connection_paths": [],
+        "next_connection_sequence": "0",
+        "params": {
+          "max_expected_time_per_block": "30000000000"
+        }
+      },
+      "channel_genesis": {
+        "channels": [],
+        "acknowledgements": [],
+        "commitments": [],
+        "receipts": [],
+        "send_sequences": [],
+        "recv_sequences": [],
+        "ack_sequences": [],
+        "next_channel_sequence": "0",
+        "params": {
+          "upgrade_timeout": {
+            "height": {
+              "revision_number": "0",
+              "revision_height": "0"
+            },
+            "timestamp": "600000000000"
+          }
+        }
+      }
+    },
+    "interchainaccounts": {
+      "controller_genesis_state": {
+        "active_channels": [],
+        "interchain_accounts": [],
+        "ports": [],
+        "params": {
+          "controller_enabled": true
+        }
+      },
+      "host_genesis_state": {
+        "active_channels": [],
+        "interchain_accounts": [],
+        "port": "icahost",
+        "params": {
+          "host_enabled": true,
+          "allow_messages": [
+            "*"
+          ]
+        }
+      }
+    },
+    "mint": {
+      "params": {
+        "mint_denom": "uallo",
+        "max_supply": "1000000000000000000000000000",
+        "f_emission": "0.025000000000000000",
+        "one_month_smoothing_degree": "0.100000000000000000",
+        "ecosystem_treasury_percent_of_total_supply": "0.359500000000000000",
+        "foundation_treasury_percent_of_total_supply": "0.100000000000000000",
+        "participants_percent_of_total_supply": "0.055000000000000000",
+        "investors_percent_of_total_supply": "0.260500000000000000",
+        "team_percent_of_total_supply": "0.175000000000000000",
+        "maximum_monthly_percentage_yield": "0.009500000000000000",
+        "investors_preseed_percent_of_total_supply": "0.050000000000000000",
+        "emission_enabled": false
+      },
+      "previous_reward_emission_per_unit_staked_token": "0.000000000000000000",
+      "previous_block_emission": "0",
+      "ecosystem_tokens_minted": "0",
+      "months_unlocked": "0"
+    },
+    "params": null,
+    "runtime": null,
+    "slashing": {
+      "params": {
+        "signed_blocks_window": "9000",
+        "min_signed_per_window": "0.330000000000000000",
+        "downtime_jail_duration": "2h0m0s",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.00010000000000000"
+      },
+      "signing_infos": [],
+      "missed_blocks": []
+    },
+    "staking": {
+      "params": {
+        "unbonding_time": "1814400s",
+        "max_validators": "50",
+        "max_entries": "7",
+        "historical_entries": "10000",
+        "bond_denom": "uallo",
+        "min_commission_rate": "0.050000000000000000"
+      },
+      "last_total_power": "0",
+      "last_validator_powers": [],
+      "validators": [],
+      "delegations": [],
+      "unbonding_delegations": [],
+      "redelegations": [],
+      "exported": false
+    },
+    "transfer": {
+      "port_id": "transfer",
+      "denom_traces": [],
+      "params": {
+        "send_enabled": true,
+        "receive_enabled": true
+      },
+      "total_escrowed": []
+    },
+    "upgrade": {}
+  },
+  "consensus": {
+    "params": {
+      "block": {
+        "max_bytes": "22020096",
+        "max_gas": "-1"
+      },
+      "evidence": {
+        "max_age_num_blocks": "100000",
+        "max_age_duration": "172800000000000",
+        "max_bytes": "1048576"
+      },
+      "validator": {
+        "pub_key_types": [
+          "ed25519"
+        ]
+      },
+      "version": {
+        "app": "0"
+      },
+      "abci": {
+        "vote_extensions_enable_height": "0"
+      }
+    }
+  }
+}
