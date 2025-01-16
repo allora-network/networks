@@ -1,0 +1,1 @@
+557d0d381bb7edf7e390465cdad8343862cdd025@peer-1.mainnet.allora.network:26656,aa75a17ad0e42c2cf449e3ffcf3f477405571104@peer-2.mainnet.allora.network:26656,d1bdd4803dd928a13bd08c4a6e7e2ea216dfa28c@peer-3.mainnet.allora.network:26656
