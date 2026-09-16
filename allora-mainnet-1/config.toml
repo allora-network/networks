@@ -212,7 +212,7 @@ laddr = "tcp://0.0.0.0:26656"
 external_address = ""
 
 # Comma separated list of seed nodes to connect to
-seeds = "961e7f18a1c3d31a146e7325206e1d37799c3979@seed-1.mainnet.allora.network:26656,ba3193330a8e57d588c51a017a3096c5a0980497@seed-2.mainnet.allora.network:26656"
+seeds = "c64889d2d2da06c9c3cf2269188320f725a4d01e@35.199.63.182:26656,5f51e319631ba698a9f0bf6a6a990b7b36a9b0ed@34.145.136.119:26656,7edbda5adacc6329a5fa33b3b661ffb7210dbd8d@136.118.114.249:26656,f6353fa612e4503562a1b59278ba8fb67b739513@34.169.74.71:26656"
 
 # Comma separated list of nodes to keep persistent connections to
 persistent_peers = ""
